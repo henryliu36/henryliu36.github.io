@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Learning experience," />
 
 
 
@@ -80,13 +80,14 @@
 
 
 <meta name="description" content="Git配置进入Git Bash设置user.name和user.email配置信息：12git config --global user.name +&amp;quot;你的GitHub用户名&amp;quot;（无需引号）git config --global user.email +&amp;quot;你的GitHub注册邮箱&amp;quot; 1git config -l  #检查配置 Git建立Github仓库以及与本">
+<meta name="keywords" content="Learning experience">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git使用基础（不断更新）">
 <meta property="og:url" content="http://yoursite.com/2018/08/11/Git使用基础/index.html">
 <meta property="og:site_name" content="Study Station of Henry">
 <meta property="og:description" content="Git配置进入Git Bash设置user.name和user.email配置信息：12git config --global user.name +&amp;quot;你的GitHub用户名&amp;quot;（无需引号）git config --global user.email +&amp;quot;你的GitHub注册邮箱&amp;quot; 1git config -l  #检查配置 Git建立Github仓库以及与本">
 <meta property="og:locale" content="English">
-<meta property="og:updated_time" content="2018-08-11T14:01:19.342Z">
+<meta property="og:updated_time" content="2018-08-12T02:16:20.533Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git使用基础（不断更新）">
 <meta name="twitter:description" content="Git配置进入Git Bash设置user.name和user.email配置信息：12git config --global user.name +&amp;quot;你的GitHub用户名&amp;quot;（无需引号）git config --global user.email +&amp;quot;你的GitHub注册邮箱&amp;quot; 1git config -l  #检查配置 Git建立Github仓库以及与本">
@@ -275,6 +276,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/11/Git使用基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/11/Git使用基础/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -346,12 +357,26 @@
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/QRCODE.jpg" alt="Henry wechat" style="width: 200px; max-width: 100%;"/>
+    <div>I looking forward to communicate！</div>
+</div>
+
+      </div>
+    
 
     
 
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Learning-experience/" rel="tag"># Learning experience</a>
+          
+        </div>
       
 
       
@@ -399,6 +424,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -455,6 +483,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
@@ -573,6 +610,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -607,6 +647,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 
@@ -665,6 +715,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'w73NSkosg9PSMjGaPuPaoy9d-gzGzoHsz',
+        appKey: 'JXYgDFMP3Ov6b5XOTugkBKok',
+        placeholder: '来呀，快活呀^_^',
+        avatar:'retro',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

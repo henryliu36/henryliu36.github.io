@@ -274,6 +274,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/11/Git使用基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/11/Git使用基础/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -399,6 +409,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/11/把Github作为云盘上传文件及文件夹/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/11/把Github作为云盘上传文件及文件夹/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -530,6 +550,16 @@ Git官网可以直接下载适配你的电脑版本的Git
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/29/小白帖利用Git和Hexo建立个人网页/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/29/小白帖利用Git和Hexo建立个人网页/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -556,12 +586,13 @@ Git官网可以直接下载适配你的电脑版本的Git
       
         
           
-          
-title: Construction of a personal website with Git and Hexodate: 2018-07-28 19:31:41categories:
+          本帖是Henry作为小白上路的学习构建博客以及其他网络工具的第一篇帖子
+其中的内容便是本博客的由来。虽然按照了多个教程一步一步跟进，但是仍然遇到了一些大坑，这里会着重说明新手如我可能遇到的一些问题。
+学习目录
+注册Github，了解建repository的流程
 
-Learning experience
+Hexo也是Github的开源内容
 
-本帖是Henry作为小白上路的学习构建博客以及其他网络工具的第
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -660,6 +691,16 @@ Learning experience
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/28/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/28/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -784,6 +825,15 @@ Learning experience
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
 
           </nav>
 
@@ -885,6 +935,9 @@ Learning experience
 
 
 
+  
+  
+
 
 
 
@@ -919,6 +972,16 @@ Learning experience
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 
@@ -973,6 +1036,28 @@ Learning experience
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'w73NSkosg9PSMjGaPuPaoy9d-gzGzoHsz',
+        appKey: 'JXYgDFMP3Ov6b5XOTugkBKok',
+        placeholder: '来呀，快活呀^_^',
+        avatar:'retro',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
