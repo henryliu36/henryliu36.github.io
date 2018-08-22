@@ -277,15 +277,15 @@ p {
   margin: 0 0 20px 0;
 }
 a {
-  color: #555;
+  color: #48d1cc;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid #999;
   word-wrap: break-word;
 }
 a:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: #48d1cc r;
+  border-bottom-color: #48d1cc;
 }
 blockquote {
   margin: 0;
@@ -301,12 +301,12 @@ hr {
   margin: 40px 0;
   height: 3px;
   border: none;
-  background-color: #ddd;
+  background-color: #48d1cc;
   background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
 }
 blockquote {
   padding: 0 15px;
-  color: #666;
+  color: #48d1cc;
   border-left: 4px solid #ddd;
 }
 blockquote cite::before {
@@ -1078,12 +1078,14 @@ pre .javascript .function {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .back-to-top.back-to-top-on {
@@ -1112,12 +1114,12 @@ pre .javascript .function {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #222;
+  color: #ff0;
   background: #222;
   border-bottom: none;
 }
 .brand:hover {
-  color: #222;
+  color: #ff0;
 }
 .logo {
   display: inline-block;
@@ -1136,7 +1138,7 @@ pre .javascript .function {
 .site-subtitle {
   margin-top: 10px;
   font-size: 13px;
-  color: #999;
+  color: #ff0;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1238,7 +1240,7 @@ pre .javascript .function {
   margin: -20px auto 15px;
   text-align: center;
   font-size: 14px;
-  color: #999;
+  color: #eee9e9;
   font-weight: bold;
   line-height: 1;
 }
@@ -1375,7 +1377,7 @@ pre .javascript .function {
   margin-left: 20px;
 }
 .posts-collapse .collection-title small {
-  color: #bbb;
+  color: #eee9e9;
   margin-left: 5px;
 }
 .posts-collapse .collection-title::before {
@@ -1418,7 +1420,7 @@ pre .javascript .function {
   transition-property: background;
 }
 .posts-collapse .post-header:hover {
-  border-bottom-color: #666;
+  border-bottom-color: #eee9e9;
 }
 .posts-collapse .post-header:hover::before {
   background: #222;
@@ -1443,7 +1445,7 @@ pre .javascript .function {
   opacity: 0.6;
 }
 .posts-collapse .post-title a {
-  color: #666;
+  color: #eee9e9;
   border-bottom: none;
 }
 .page-home .post-type-quote .post-header,
@@ -1460,7 +1462,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
+  color: #eee9e9;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1472,7 +1474,7 @@ pre .javascript .function {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #d3d3d3;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -1496,7 +1498,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
-  color: #999;
+  color: #d3d3d3;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
@@ -1507,7 +1509,7 @@ pre .javascript .function {
   padding: 3px;
 }
 .posts-expand .post-meta .post-category-list-link {
-  color: #999;
+  color: #d3d3d3;
 }
 .posts-expand .post-meta .post-description {
   font-size: 14px;
@@ -1676,16 +1678,6 @@ pre .javascript .function {
 .sidebar a:hover {
   color: #eee;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar {
-    display: none !important;
-  }
-}
-@media (max-width: 767px) {
-  .sidebar {
-    display: none !important;
-  }
-}
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
@@ -1714,12 +1706,14 @@ pre .javascript .function {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .sidebar-toggle-line {
@@ -1822,7 +1816,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #66daff;
+  background: #ff3d57;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1942,9 +1936,35 @@ pre .javascript .function {
 .post-toc .nav .active-current > a:hover {
   color: #87daff;
 }
+.sidebar-active #sidebar-dimmer {
+  opacity: 0.7;
+  -webkit-transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
+  -moz-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  -o-transform: translateX(-150%);
+  transform: translateX(-150%);
+  transition: opacity 0.2s;
+}
+#sidebar-dimmer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0s 0.2s;
+}
+@media (max-width: 767px) {
+  #sidebar-dimmer {
+    display: block;
+  }
+}
 .footer {
   font-size: 14px;
-  color: #999;
+  color: #fff;
 }
 .footer img {
   border: none;
@@ -2399,7 +2419,7 @@ pre .javascript .function {
   margin: 5px 10px;
 }
 .category-all-page .category-list-count {
-  color: #bbb;
+  color: #fff;
 }
 .category-all-page .category-list-count:before {
   display: inline;
@@ -2597,7 +2617,7 @@ p {
   margin: 0 0 25px 0;
 }
 a {
-  border-bottom-color: #ccc;
+  border-bottom-color: #5f9ea0;
 }
 hr {
   margin: 20px 0;
@@ -2607,7 +2627,7 @@ hr {
   margin-top: 80px;
 }
 .header {
-  background: #f5f5f5;
+  background: #4169e1;
 }
 .header-inner {
   padding: 25px 0 20px;
@@ -2806,11 +2826,11 @@ hr {
 }
 .posts-expand .post-tags a {
   padding: 1px 5px;
-  background: #f5f5f5;
+  background: #4169e1;
   border-bottom: none;
 }
 .posts-expand .post-tags a:hover {
-  background: #ccc;
+  background: #4169e1;
 }
 .posts-expand .post-nav {
   margin-top: 40px;
@@ -2824,7 +2844,7 @@ hr {
   font-size: 14px;
   background: none;
   border: none;
-  border-bottom: 2px solid #666;
+  border-bottom: 2px solid #4169e1;
   transition-property: border;
 }
 @media (max-width: 767px) {
@@ -2892,7 +2912,7 @@ hr {
   margin-top: 80px;
   padding: 10px 0;
   background: #f5f5f5;
-  color: #666;
+  color: #4169e1;
 }
 .footer-inner {
   margin: 0 auto;
@@ -2921,4 +2941,12 @@ body {
 #sidebar span,
 #sidebar a {
   color: #bff;
+}
+.header {
+  background: url("https://i.pinimg.com/originals/bf/3f/08/bf3f087b42354313fcf9f8c81f69e8cd.jpg") no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  background-position: center;
+  width: 100%;
+  display: table;
 }

@@ -56,10 +56,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.jpg?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.jpg?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Learning experience," />
+  <meta name="keywords" content="Git,Hexo," />
 
 
 
@@ -80,7 +80,7 @@
 
 
 <meta name="description" content="本帖是Henry作为小白上路的学习构建博客以及其他网络工具的第一篇帖子 其中的内容便是本博客的由来。虽然按照了多个教程一步一步跟进，但是仍然遇到了一些大坑，这里会着重说明新手如我可能遇到的一些问题。 学习目录 注册Github，了解建repository的流程  Hexo也是Github的开源内容 本方法利用了Github的免费空间，使得用户暂时不用去担心构建服务器的问题。 Github构建网页的">
-<meta name="keywords" content="Learning experience">
+<meta name="keywords" content="Git,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小白帖利用Git和Hexo建立个人网页">
 <meta property="og:url" content="http://yoursite.com/2018/07/29/小白帖利用Git和Hexo建立个人网页/index.html">
@@ -88,7 +88,7 @@
 <meta property="og:description" content="本帖是Henry作为小白上路的学习构建博客以及其他网络工具的第一篇帖子 其中的内容便是本博客的由来。虽然按照了多个教程一步一步跟进，但是仍然遇到了一些大坑，这里会着重说明新手如我可能遇到的一些问题。 学习目录 注册Github，了解建repository的流程  Hexo也是Github的开源内容 本方法利用了Github的免费空间，使得用户暂时不用去担心构建服务器的问题。 Github构建网页的">
 <meta property="og:locale" content="English">
 <meta property="og:image" content="https://i.loli.net/2018/07/28/5b5c620308f08.jpg">
-<meta property="og:updated_time" content="2018-08-12T01:50:28.976Z">
+<meta property="og:updated_time" content="2018-08-22T09:02:59.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小白帖利用Git和Hexo建立个人网页">
 <meta name="twitter:description" content="本帖是Henry作为小白上路的学习构建博客以及其他网络工具的第一篇帖子 其中的内容便是本博客的由来。虽然按照了多个教程一步一步跟进，但是仍然遇到了一些大坑，这里会着重说明新手如我可能遇到的一些问题。 学习目录 注册Github，了解建repository的流程  Hexo也是Github的开源内容 本方法利用了Github的免费空间，使得用户暂时不用去担心构建服务器的问题。 Github构建网页的">
@@ -102,7 +102,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -157,9 +157,7 @@
 
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
         <span class="site-title">Study Station of Henry</span>
-        <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
@@ -193,6 +191,36 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -209,7 +237,6 @@
 
   
 </nav>
-
 
 
  </div>
@@ -274,6 +301,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/网络学习/" itemprop="url" rel="index">
+                    <span itemprop="name">网络学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -445,7 +494,7 @@
       <div>
         <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
     <img id="wechat_subscriber_qcode" src="/uploads/QRCODE.jpg" alt="Henry wechat" style="width: 200px; max-width: 100%;"/>
-    <div>I looking forward to communicate！</div>
+    <div>Inputs welcome！</div>
 </div>
 
       </div>
@@ -459,7 +508,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Learning-experience/" rel="tag"># Learning experience</a>
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
         </div>
       
@@ -472,8 +523,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/28/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/07/28/Easy-Way-to-Construct-Your-Personal-Website-with-Git-and-Hexo/" rel="next" title="Construction of a personal website with Git and Hexo">
+                <i class="fa fa-chevron-left"></i> Construction of a personal website with Git and Hexo
               </a>
             
           </div>
@@ -534,6 +585,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -568,22 +621,31 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">tags</span>
-                
+                </a>
               </div>
             
 
@@ -592,14 +654,56 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hrliu@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/hangrui.liu" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/hangruiliu" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+            </div>
+          
 
           
           
 
           
-     
+          
 
--        
+          <div id="player1" class="aplayer"></div>
+<script src="/js/src/APlayer.min"></script>
+<script type="text/javascript">
+var ap = new APlayer({
+    element: document.getElementById('player1'),                       // Optional, player element
+    narrow: false,                                                     // Optional, narrow style
+    autoplay: true,                                                    // Optional, autoplay song(s), not supported by mobile browsers
+    showlrc: 0,                                                        // Optional, show lrc, can be 0, 1, 2, see: ###With lrc
+    mutex: true,                                                       // Optional, pause other players when this player playing
+    theme: '#e6d0b2',                                                  // Optional, theme color, default: #b7daff
+    mode: 'random',                                                    // Optional, play mode, can be `random` `single` `circulation`(loop) `order`(no loop), default: `circulation`
+    preload: 'metadata',                                               // Optional, the way to load music, can be 'none' 'metadata' 'auto', default: 'auto'
+    listmaxheight: '513px',                                             // Optional, max height of play list
+    music: {                                                           // Required, music info, see: ###With playlist
+        title: 'Then Slience',                                          // Required, music title
+        author: 'Kjartan Salvesen',                          // Required, music author
+        url: 'http://music163.com/#/outchain/2/574370/',  // Required, music url
+        pic: 'http://cost-off.up.n.seesaa.net/cost-off/image/1A1A1A601A1A1A1A1AL1A602-thumbnail2.jpg?d=a21',  // Optional, music picture
+    }
+});
+</script>
 
         </div>
       </section>
@@ -648,11 +752,7 @@
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
