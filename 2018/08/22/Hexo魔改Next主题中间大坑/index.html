@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="#已解决  改变站点名称颜色位置 1themes\next\source\css\_common\components\header\site-meta.styl  生成颜色RGB以及16色代码生成网站  live2d板娘以及不同的主题 favicon改动  #待解决  音乐除了网易云播放器生成外链之外还有其他那些播放器可用 为何Aplayer JS已经加入source/js之后仍然毫无反应（si">
+<meta name="description" content="#已解决  改变站点名称颜色位置 1themes\next\source\css\_common\components\header\site-meta.styl  生成颜色RGB以及16色代码生成网站  live2d板娘以及不同的主题 favicon改动 网站运行时间 1./themes/layout/_partials/footer.swig  side Bar修改在  themes\next">
 <meta name="keywords" content="网络学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo魔改Next主题中间大坑">
 <meta property="og:url" content="http://yoursite.com/2018/08/22/Hexo魔改Next主题中间大坑/index.html">
 <meta property="og:site_name" content="Study Station of Henry">
-<meta property="og:description" content="#已解决  改变站点名称颜色位置 1themes\next\source\css\_common\components\header\site-meta.styl  生成颜色RGB以及16色代码生成网站  live2d板娘以及不同的主题 favicon改动  #待解决  音乐除了网易云播放器生成外链之外还有其他那些播放器可用 为何Aplayer JS已经加入source/js之后仍然毫无反应（si">
+<meta property="og:description" content="#已解决  改变站点名称颜色位置 1themes\next\source\css\_common\components\header\site-meta.styl  生成颜色RGB以及16色代码生成网站  live2d板娘以及不同的主题 favicon改动 网站运行时间 1./themes/layout/_partials/footer.swig  side Bar修改在  themes\next">
 <meta property="og:locale" content="English">
-<meta property="og:updated_time" content="2018-08-22T09:42:10.059Z">
+<meta property="og:updated_time" content="2018-08-22T11:34:46.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo魔改Next主题中间大坑">
-<meta name="twitter:description" content="#已解决  改变站点名称颜色位置 1themes\next\source\css\_common\components\header\site-meta.styl  生成颜色RGB以及16色代码生成网站  live2d板娘以及不同的主题 favicon改动  #待解决  音乐除了网易云播放器生成外链之外还有其他那些播放器可用 为何Aplayer JS已经加入source/js之后仍然毫无反应（si">
+<meta name="twitter:description" content="#已解决  改变站点名称颜色位置 1themes\next\source\css\_common\components\header\site-meta.styl  生成颜色RGB以及16色代码生成网站  live2d板娘以及不同的主题 favicon改动 网站运行时间 1./themes/layout/_partials/footer.swig  side Bar修改在  themes\next">
 
 
 
@@ -179,12 +179,12 @@
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
+        <li class="menu-item menu-item-首页">
           <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
           </a>
         </li>
       
@@ -199,32 +199,42 @@
         </li>
       
         
-        <li class="menu-item menu-item-tags">
+        <li class="menu-item menu-item-标签">
           <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-categories">
+        <li class="menu-item menu-item-分类">
           <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            分类
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-相册">
+          <a href="/albums/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Archives
+            相册
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-歌和电影">
+          <a href="/amusements/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            歌和电影
           </a>
         </li>
       
@@ -368,7 +378,19 @@
 </li>
 <li>live2d板娘以及不同的主题</li>
 <li>favicon改动</li>
+<li><p>网站运行时间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./themes/layout/_partials/footer.swig</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>side Bar修改在  themes\next\layout_custom\sidebar.swig</p>
+<blockquote>
+<p>footer header 在partials</p>
+</blockquote>
+</li>
+<li><p>创建新的menu项（分类，about，home等）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page xxxx    #创建新的index文件</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
+<p>之后再在菜单中添加链接。编辑主题的 _config.yml ，将 menu 中的对应项添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">   home: /</span><br><span class="line">   categories: /categories</span><br><span class="line">   archives: /archives</span><br><span class="line">   tags: /tags</span><br><span class="line">   xxx: /xxx</span><br></pre></td></tr></table></figure></p>
 <p>#待解决</p>
 <ol>
 <li>音乐除了网易云播放器生成外链之外还有其他那些播放器可用<blockquote>
@@ -416,8 +438,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/22/Detalis in Microfludics Operation/" rel="next" title="Details in Microfludics Operation">
-                <i class="fa fa-chevron-left"></i> Details in Microfludics Operation
+              <a href="/2018/08/22/Use of Cary 5000 UV-Vis-NIR Spectrophotometer  175-3300 nm/" rel="next" title="Use of Cary 5000 UV-Vis-NIR Spectrophotometer  175-3300 nm">
+                <i class="fa fa-chevron-left"></i> Use of Cary 5000 UV-Vis-NIR Spectrophotometer  175-3300 nm
               </a>
             
           </div>
@@ -425,6 +447,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/22/Biomedical jargons/" rel="prev" title="Biomedical jargons">
+                Biomedical jargons <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -499,9 +525,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -523,7 +549,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -535,6 +561,12 @@
 
           
             <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/henryliu36" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
                 
                   <span class="links-of-author-item">
                     <a href="mailto:hrliu@gmail.com" target="_blank" title="E-Mail">
@@ -585,6 +617,35 @@ var ap = new APlayer({
 });
 </script>
 
+
+<div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("07/20/2018 00:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="Live"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
         </div>
       </section>
 
@@ -612,60 +673,12 @@ var ap = new APlayer({
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
 
 
 
-
-
-
-<section class="footer">
-    <span class="footer__copyright">
-<div><span id="span_dt_dt"> </span>
-<script language="javascript">
-function show_date_time(){
-window.setTimeout("show_date_time()", 1000);
-BirthDay=new Date("7/24/2018 00:00:00");//这个日期是可以修改的
-today=new Date();
-timeold=(today.getTime()-BirthDay.getTime());//其实仅仅改了这里
-sectimeold=timeold/1000
-secondsold=Math.floor(sectimeold);
-msPerDay=24*60*60*1000
-e_daysold=timeold/msPerDay
-daysold=Math.floor(e_daysold);
-e_hrsold=(e_daysold-daysold)*24;
-hrsold=Math.floor(e_hrsold);
-e_minsold=(e_hrsold-hrsold)*60;
-minsold=Math.floor((e_hrsold-hrsold)*60);
-seconds=Math.floor((e_minsold-minsold)*60);
-span_dt_dt.innerHTML="This site has been run"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒 🐼 ";
-}
-show_date_time();
-</script></div>
-    </span>
-
-
-<div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Henry</span>
-</div>
-
-
-    <div class="x-goto-top">
-        <div class="x-arrow"></div>
-        <div class="x-stick"></div>
-    </div>
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-</section>
 
         
 
